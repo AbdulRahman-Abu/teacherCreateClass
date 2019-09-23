@@ -9,13 +9,13 @@
 </head>
 <body>
     <div class="container">
-    <form id="createClassForm">
+    <form id="createClassForm" action="" method="post">
     <h1>Create a class for your students</h1>
-    <p id="detailsHeader">Enter the details about your class, subject and grade</p>
+    <p id="detailsHeader">Enter the details about your class, courses and grades</p>
     
     <input type="text" name="enterClassName" placeholder="Enter your class name" required id="enterClassName"><br>
     <div class="coursegroup">
-    <select name="subjects" class="subjects">
+    <select name="subjects" class="subjects" required>
             <option value="">--Please choose an option--</option>
             <option value="Web Development">Web Development</option>
             <option value="Data Science">Data Science</option>
@@ -29,7 +29,7 @@
           </select>
 <br>  
 
-<select name="age" class="age">
+<select name="age" class="age" required>
         <option value="">--Please choose your age range--</option>
         <option value="Web Development">7 - 15</option>
         <option value="Data Science">16 - 25</option>
